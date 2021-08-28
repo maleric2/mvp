@@ -1,0 +1,369 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16234 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker18
+-projectPath
+D:/Personal/Arhitectures/Arhitectures
+-logFile
+Logs/AssetImportWorker18.log
+-srvPort
+62208
+Successfully changed project path to: D:/Personal/Arhitectures/Arhitectures
+D:/Personal/Arhitectures/Arhitectures
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 15.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Personal/Arhitectures/Arhitectures/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   30.0.14.7168
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001085 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 15.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000325 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1141 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1584.
+Total: 1.824300 ms (FindLiveObjects: 0.111700 ms CreateObjectMapping: 0.025600 ms MarkObjects: 1.621900 ms  DeleteObjects: 0.064100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/maleric/Example/MVP/MainMenuView.cs
+  artifactKey: Guid(6911cbb167ce8334396edd152f670125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example/MVP/MainMenuView.cs using Guid(6911cbb167ce8334396edd152f670125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8126677a313b24ca6f71d1ac49d681') in 0.018298 seconds
+  Import took 0.019995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/maleric/Example/MVP/MainMenuPresenter.cs
+  artifactKey: Guid(1e741e68c87aa064aba3a44c6abe0cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example/MVP/MainMenuPresenter.cs using Guid(1e741e68c87aa064aba3a44c6abe0cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0604e965830d63e0c60dc342c197ea4') in 0.004146 seconds
+  Import took 0.006050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/maleric/Example/MVP/MainMenuModel.cs
+  artifactKey: Guid(d40a20c8e4a79294a950e1f518639af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example/MVP/MainMenuModel.cs using Guid(d40a20c8e4a79294a950e1f518639af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1e6e2ca7c43b0021a02d93fca85dff') in 0.004065 seconds
+  Import took 0.005649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/maleric/Example/MVP/GameView.cs
+  artifactKey: Guid(928a6a929a967a148839d092a57da867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example/MVP/GameView.cs using Guid(928a6a929a967a148839d092a57da867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6659a6a6a451c8325388398e5f0732c6') in 0.003837 seconds
+  Import took 0.005250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33801.105440 seconds.
+  path: Assets/maleric/Core/Common
+  artifactKey: Guid(9004751246c0a4945a30b78623559d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Core/Common using Guid(9004751246c0a4945a30b78623559d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4b8952be172b0e569dd1bcbc686afc') in 0.006234 seconds
+  Import took 0.008812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000669 seconds.
+  path: Assets/maleric/Core/Common
+  artifactKey: Guid(9004751246c0a4945a30b78623559d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Core/Common using Guid(9004751246c0a4945a30b78623559d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4b8952be172b0e569dd1bcbc686afc') in 0.002115 seconds
+  Import took 0.003718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 916.862421 seconds.
+  path: Assets/maleric/Runtime
+  artifactKey: Guid(c0cd13c9ddeda6e48a37ebcb242f66f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Runtime using Guid(c0cd13c9ddeda6e48a37ebcb242f66f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5dae3c06f830b486079dcff15bd05dc') in 0.005476 seconds
+  Import took 0.007489 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.523 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.6 MB.
+System memory in use after: 57.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1587.
+Total: 1.202200 ms (FindLiveObjects: 0.099200 ms CreateObjectMapping: 0.023800 ms MarkObjects: 1.028100 ms  DeleteObjects: 0.050200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.361975 seconds.
+  path: Assets/maleric/Runtime/NewAssemblyReference.asmref
+  artifactKey: Guid(95710ee03448a4f4cbf0056b2df2a79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Runtime/NewAssemblyReference.asmref using Guid(95710ee03448a4f4cbf0056b2df2a79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492ededcf840cf6810b2d7065ada45eb') in 0.010574 seconds
+  Import took 0.012451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008665 seconds.
+  path: Assets/maleric/Runtime/NewAssemblyReference.asmref
+  artifactKey: Guid(95710ee03448a4f4cbf0056b2df2a79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Runtime/NewAssemblyReference.asmref using Guid(95710ee03448a4f4cbf0056b2df2a79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492ededcf840cf6810b2d7065ada45eb') in 0.001712 seconds
+  Import took 0.003516 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000510 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.529 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1590.
+Total: 1.270600 ms (FindLiveObjects: 0.098300 ms CreateObjectMapping: 0.022200 ms MarkObjects: 1.101400 ms  DeleteObjects: 0.048000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.154000 seconds.
+  path: Assets/maleric/Runtime/Unity.hr.maleric.package.asmdef
+  artifactKey: Guid(eee96645e137ec343a9671d2176ac66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Runtime/Unity.hr.maleric.package.asmdef using Guid(eee96645e137ec343a9671d2176ac66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d8fd40d536e76323fb8d47a35552e2') in 0.011162 seconds
+  Import took 0.013563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010002 seconds.
+  path: Assets/maleric/Runtime/Unity.hr.maleric.package.asmdef
+  artifactKey: Guid(eee96645e137ec343a9671d2176ac66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Runtime/Unity.hr.maleric.package.asmdef using Guid(eee96645e137ec343a9671d2176ac66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d8fd40d536e76323fb8d47a35552e2') in 0.001654 seconds
+  Import took 0.003263 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000337 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.535 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1593.
+Total: 1.183500 ms (FindLiveObjects: 0.097100 ms CreateObjectMapping: 0.024900 ms MarkObjects: 1.020100 ms  DeleteObjects: 0.040500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000295 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.527 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1596.
+Total: 1.200700 ms (FindLiveObjects: 0.090100 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.036900 ms  DeleteObjects: 0.048900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.294429 seconds.
+  path: Assets/maleric/Example
+  artifactKey: Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example using Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41c47aa1c350d18375af654c82291d9') in 0.006957 seconds
+  Import took 0.008622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000592 seconds.
+  path: Assets/maleric/Example
+  artifactKey: Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Example using Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41c47aa1c350d18375af654c82291d9') in 0.001690 seconds
+  Import took 0.003359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.300163 seconds.
+  path: Assets/maleric/Samples
+  artifactKey: Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maleric/Samples using Guid(8526532511f04fb4f884166690a6be1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12813046911bbe12af6fab5b04872376') in 0.006195 seconds
+  Import took 0.007977 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.524 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1599.
+Total: 1.215500 ms (FindLiveObjects: 0.091100 ms CreateObjectMapping: 0.024600 ms MarkObjects: 1.048900 ms  DeleteObjects: 0.049300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.069134 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b947cf3437ccd0740ad823cecad0287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b947cf3437ccd0740ad823cecad0287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b91ebb137c4662c3e06142479445e9b') in 0.005919 seconds
+  Import took 0.007542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004842 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b947cf3437ccd0740ad823cecad0287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b947cf3437ccd0740ad823cecad0287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b91ebb137c4662c3e06142479445e9b') in 0.001590 seconds
+  Import took 0.003193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.106448 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.016363 seconds
+  Import took 0.019088 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.529 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1602.
+Total: 1.219400 ms (FindLiveObjects: 0.097400 ms CreateObjectMapping: 0.038000 ms MarkObjects: 1.040800 ms  DeleteObjects: 0.042500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.157825 seconds.
+  path: Assets/Maleric MVP
+  artifactKey: Guid(a87c6ba3a22695e40985d91184c0021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maleric MVP using Guid(a87c6ba3a22695e40985d91184c0021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0387c89be548da53342c18d51f24fc') in 0.006095 seconds
+  Import took 0.009480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002008 seconds.
+  path: Assets/Maleric MVP
+  artifactKey: Guid(a87c6ba3a22695e40985d91184c0021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maleric MVP using Guid(a87c6ba3a22695e40985d91184c0021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0387c89be548da53342c18d51f24fc') in 0.001582 seconds
+  Import took 0.003105 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.512 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1605.
+Total: 1.207200 ms (FindLiveObjects: 0.092200 ms CreateObjectMapping: 0.025800 ms MarkObjects: 1.038800 ms  DeleteObjects: 0.049600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.272503 seconds.
+  path: Assets/Samples/Menu.unity
+  artifactKey: Guid(1e3894cd5e6caad4eb0fbf99d153be5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Menu.unity using Guid(1e3894cd5e6caad4eb0fbf99d153be5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1372bf6292777b674a0812417f0d93b') in 0.011470 seconds
+  Import took 0.015229 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

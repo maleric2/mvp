@@ -1,0 +1,20 @@
+{
+	"name": "hr.maleric.mvp",
+	"version": "0.8.0",
+	"displayName": "Maleric MVP",
+	"description": "Package with MVP implementation",
+	"unity": "2019.2",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@.git"
+	},
+	"keywords": [
+		"MVP",
+		"maleric"
+	],
+	"author": {
+		"name": "Marko Aleric",
+		"email": "markoall1@gmail.com",
+		"url": "https://interactivesolutions.hr/"
+	}
+}
