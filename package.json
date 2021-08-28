@@ -6,7 +6,7 @@
 	"unity": "2019.2",
 	"repository": {
 		"type": "git",
-		"url": "ssh://git@.git"
+		"url": "https://github.com/maleric2/mvp.git"
 	},
 	"keywords": [
 		"MVP",

@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace maleric.Core.States
 {
+
 	public interface IBaseState
 	{
 		bool IsActive { get; }
