@@ -60,7 +60,7 @@ namespace maleric.MVP.Common
 
 		protected virtual void Start()
 		{
-			InitStates();
+			InitServices();
 			InitStates();
 
 			OnServiceReady?.Invoke();
