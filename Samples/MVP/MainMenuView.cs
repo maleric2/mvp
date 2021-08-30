@@ -1,9 +1,9 @@
-﻿using maleric.Core.MVP.View;
-using maleric.Core.States;
+﻿using maleric.MVP.Core.View;
+using maleric.MVP.States;
 using System;
 using UnityEngine;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class MainMenuView : UIView, IModelView<MainMenuModel>
 	{

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace maleric.Core.MVP.View
+namespace maleric.MVP.Core.View
 {
 	[System.Serializable]
 	public struct CanvasControlGroup

@@ -1,7 +1,7 @@
-﻿using maleric.Core.Common;
+﻿using maleric.MVP.Common;
 using System;
 
-namespace maleric.Core.Service
+namespace maleric.MVP.Service
 {
 	public interface IService : IServiceDepended
 	{

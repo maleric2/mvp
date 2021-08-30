@@ -1,9 +1,13 @@
-﻿using maleric.Core.Common;
+﻿using maleric.MVP.Common;
 using System;
 using UnityEngine;
 
-namespace maleric.Core.States
+namespace maleric.MVP.States
 {
+	// Arhitecture Preview:
+	// 1. Scenes -> We can have multiple scenes, mostly used for different chunks of game
+	//	2. States -> Multiple States that Groups Behavior with multiple presenters and views inside it
+	//		3. Presenter -> 
 
 	public interface IBaseState
 	{
@@ -21,7 +25,7 @@ namespace maleric.Core.States
 	public interface IState : IBaseState, IServiceDepended
 	{
 		string SceneName { get; }
-		void Setup();
+		void Setup(Service.IServiceLocator serviceLocator);
 		void Unsetup();
 
 		GameObject GetStateGameObject();
@@ -42,7 +46,7 @@ namespace maleric.Core.States
 		/// <summary>
 		/// Setting up state only once at initialization
 		/// </summary>
-		public abstract void Setup();
+		public abstract void Setup(Service.IServiceLocator serviceLocator);
 
 		/// <summary>
 		/// State unsetup usually on game exit

@@ -1,9 +1,9 @@
-using maleric.Core.Common;
-using maleric.Core.MVP.Model;
-using maleric.Core.States;
+using maleric.MVP.Common;
+using maleric.MVP.Core.Model;
+using maleric.MVP.States;
 using System;
 
-namespace maleric.Core.MVP.Presenter
+namespace maleric.MVP.Core.Presenter
 {
 	public abstract class Presenter : IBackable, IVisible, IInteractable
 	{

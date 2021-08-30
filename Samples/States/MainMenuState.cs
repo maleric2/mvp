@@ -1,14 +1,14 @@
-﻿using maleric.Core.States;
+﻿using maleric.MVP.States;
 using System;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class MainMenuState : AState
 	{
 		public override string SceneName => "Menu";
 		MainMenuPresenter mainMenuPresenter;
 
-		public override void Setup()
+		public override void Setup(Service.IServiceLocator serviceLocator)
 		{
 			mainMenuPresenter = new MainMenuPresenter(this);
 		}

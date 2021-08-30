@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
-using maleric.Core.Common;
+using maleric.MVP.Common;
 using UnityEngine;
 
-namespace maleric.Core.Service
+namespace maleric.MVP.Service
 {
 	/// <summary>
 	/// Service that should cover all Dependencies.

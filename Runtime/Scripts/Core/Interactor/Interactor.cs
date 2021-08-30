@@ -1,8 +1,8 @@
-using maleric.Core.MVP.View;
+using maleric.MVP.Core.View;
 using System;
 using UnityEngine;
 
-namespace maleric.Core.MVP.Model
+namespace maleric.MVP.Core.Model
 {
 	public abstract class AInteractor
 	{

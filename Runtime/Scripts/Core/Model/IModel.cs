@@ -1,6 +1,6 @@
 using System;
 
-namespace maleric.Core.MVP.Model
+namespace maleric.MVP.Core.Model
 {
 	public interface IModel : IDisposable
 	{

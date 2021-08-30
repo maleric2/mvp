@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace maleric.Core.States
+namespace maleric.MVP.States
 {
 	public interface IStateMachine
 	{
@@ -36,23 +36,16 @@ namespace maleric.Core.States
 				_statesMapPerType.Add(_states[i].GetType(), _states[i]);
 		}
 
-		public void Setup()
+		public void Setup(Service.IServiceLocator serviceLocator)
 		{
-			for (int i = 0; i < _states.Length; i++)
-				_states[i].Setup();
+			for (int i = 0; i < _states.Length; i++) _states[i].Setup(serviceLocator);
 		}
 
 		public void Dispose() { }
 
-		public IState GetState(Type type)
-		{
-			return _statesMapPerType[type];
-		}
+		public IState GetState(Type type) => _statesMapPerType[type];
 
-		public async Task GoToState<T>(ILoadState loadingSceneState = null) where T : IState
-		{
-			await GoToState(GetState(typeof(T)), loadingSceneState);
-		}
+		public async Task GoToState<T>(ILoadState loadingSceneState = null) where T : IState => await GoToState(GetState(typeof(T)), loadingSceneState);
 
 		/// <summary>
 		/// Go to the State

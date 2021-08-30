@@ -1,9 +1,9 @@
-using maleric.Core.MVP.Model;
+using maleric.MVP.Core.Model;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace maleric.Core.Common
+namespace maleric.MVP.Common
 {
 	/// <summary>
 	/// Interface for the core Observable Data

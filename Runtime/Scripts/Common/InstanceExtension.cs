@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace maleric.Core.Common
+namespace maleric.MVP.Common
 {
 	public static class InstanceExtension
 	{

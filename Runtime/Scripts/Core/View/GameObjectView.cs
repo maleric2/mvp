@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace maleric.Core.MVP.View
+namespace maleric.MVP.Core.View
 {
 	/// <summary>
 	/// Simple View that is only GameObject

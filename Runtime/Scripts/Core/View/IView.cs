@@ -1,5 +1,5 @@
 
-namespace maleric.Core.MVP.View
+namespace maleric.MVP.Core.View
 {
 	/// <summary>
 	/// Interface for View

@@ -1,4 +1,4 @@
-﻿namespace maleric.Core.MVP.Presenter
+﻿namespace maleric.MVP.Core.Presenter
 {
 	public interface IBackable
 	{

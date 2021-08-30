@@ -1,8 +1,8 @@
-﻿using maleric.Core.MVP.Model;
-using maleric.Core.States;
+﻿using maleric.MVP.Core.Model;
+using maleric.MVP.States;
 using System;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class MainMenuModel : IModel
 	{

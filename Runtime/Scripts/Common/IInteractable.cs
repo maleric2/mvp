@@ -1,4 +1,4 @@
-﻿namespace maleric.Core.Common
+﻿namespace maleric.MVP.Common
 {
 	public interface IInteractable
 	{

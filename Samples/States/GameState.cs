@@ -1,8 +1,8 @@
-﻿using maleric.Core.MVP.Presenter;
-using maleric.Core.States;
+﻿using maleric.MVP.Core.Presenter;
+using maleric.MVP.States;
 using System;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class GameState : AState
 	{
@@ -10,7 +10,7 @@ namespace maleric.Example
 
 		protected Presenter<GameView> _simpleViewPresenter;
 
-		public override void Setup()
+		public override void Setup(Service.IServiceLocator serviceLocator)
 		{
 			_simpleViewPresenter = new Presenter<GameView>(this);
 		}

@@ -1,9 +1,9 @@
-﻿using maleric.Core.MVP.Presenter;
-using maleric.Core.States;
+﻿using maleric.MVP.Core.Presenter;
+using maleric.MVP.States;
 using System;
 using UnityEngine;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class MainMenuPresenter : Presenter
 	{

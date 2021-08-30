@@ -1,8 +1,8 @@
-﻿using maleric.Core.States;
+﻿using maleric.MVP.States;
 using System;
 using UnityEngine;
 
-namespace maleric.Example
+namespace maleric.MVP.Samples
 {
 	public class LoadState : ALoadState
 	{
