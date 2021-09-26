@@ -29,6 +29,8 @@ namespace maleric.MVP.States
 		void Unsetup();
 
 		GameObject GetStateGameObject();
+
+		void BackPressed();
 	}
 
 	public abstract class AState : IState
@@ -53,6 +55,7 @@ namespace maleric.MVP.States
 		/// </summary>
 		public abstract void Unsetup();
 
+
 		public void Enter()
 		{
 			_stateGO = _stateGO ?? new GameObject(this.GetType().Name);
@@ -76,5 +79,7 @@ namespace maleric.MVP.States
 
 		protected abstract void OnStateEnter();
 		protected abstract void OnStateExit();
+
+		public virtual void BackPressed() { }
 	}
 }
