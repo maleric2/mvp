@@ -127,7 +127,7 @@ namespace maleric.MVP.Core.Presenter
 
 		public Presenter(IState state) : base(state)
 		{
-			Interactor<TModel> interactor = new Interactor<TModel>(GetModelData);
+			_interactor = new Interactor<TModel>(GetModelData);
 		}
 
 		protected virtual TModel GetModelData()

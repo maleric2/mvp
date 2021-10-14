@@ -112,9 +112,12 @@ namespace maleric.MVP.Common
 
 		public async void GoToState(IState targetState) => await _stateMachine.GoToState(targetState, GetLoadState(targetState.GetType()));
 
-
-		public async void GoToState<T>() where T : IState => await _stateMachine.GoToState<T>(GetLoadState(typeof(T)));
-
+		public async void GoToState<T>() where T : IState
+		{
+			var targetState = GetLoadState(typeof(T));
+			if (targetState == null) Debug.LogError("State Not Found " + typeof(T).Name);
+			await _stateMachine.GoToState<T>(targetState);
+		}
 		/// <summary>
 		/// Return all states that we need inside this game/app.
 		/// <example>

@@ -15,6 +15,9 @@ namespace maleric.MVP.States
 
 	public abstract class ALoadState : ILoadState
 	{
+		public const int FAIL_SAFE_ACTIVATION_WAIT_MS = 200;
+		public const float MIN_SCENE_LOAD_PROGRESS = 0.9f;
+
 		public bool IsActive { get; private set; }
 
 		public event Action OnTargetStateLoaded;
@@ -91,11 +94,14 @@ namespace maleric.MVP.States
 				if (token.IsCancellationRequested)
 					return;
 
-				if (asyncOperation.progress >= 0.9f)
+				if (asyncOperation.progress >= MIN_SCENE_LOAD_PROGRESS)
 					break;
 			}
 
 			asyncOperation.allowSceneActivation = true;
+			// Failsafe wait for evertything to be ready
+			await Task.Delay(FAIL_SAFE_ACTIVATION_WAIT_MS);
+
 			_cts.Cancel();
 			token.ThrowIfCancellationRequested();
 
