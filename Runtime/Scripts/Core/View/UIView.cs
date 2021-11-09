@@ -36,7 +36,7 @@ namespace maleric.MVP.Core.View
 			if (_canvasControlGroup.Group) _canvasControlGroup.Group.interactable = isInteractable;
 		}
 
-		public void SetVisible(bool isVisible)
+		public virtual void SetVisible(bool isVisible)
 		{
 			if (_canvasControlGroup.Canvas) _canvasControlGroup.Canvas.enabled = isVisible;
 			if (_canvasControlGroup.Group) _canvasControlGroup.Group.alpha = isVisible ? 1f : 0f;
