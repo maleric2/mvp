@@ -92,7 +92,10 @@ namespace maleric.MVP.Core.Presenter
 		protected override void CollectReferences()
 		{
 			_view = UnityEngine.GameObject.FindObjectOfType<TView>();
-			if (_view) _view.gameObject.transform.SetParent(_state.GetStateGameObject().transform);
+			if (_view && _state != null && _state.GetStateGameObject() != null)
+			{
+				_view.gameObject.transform.SetParent(_state.GetStateGameObject().transform);
+			}
 		}
 
 		protected override void DisposeOfReferences()
