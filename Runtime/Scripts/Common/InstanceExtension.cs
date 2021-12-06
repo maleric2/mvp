@@ -12,5 +12,14 @@ namespace maleric.MVP.Common
 			behaviour.name = loadedBehaviour.name;
 			return behaviour;
 		}
+
+		public static TObject InstantiateResource<TObject>(string path, bool worldPositionStays = true)
+			where TObject : Object
+		{
+			var loadedBehaviour = Resources.Load<TObject>(path);
+			var behaviour = Object.Instantiate(loadedBehaviour, null, worldPositionStays);
+			behaviour.name = loadedBehaviour.name;
+			return behaviour;
+		}
 	}
 }
