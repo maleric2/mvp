@@ -58,7 +58,15 @@ namespace maleric.MVP.States
 
 		public void Enter()
 		{
-			_stateGO = _stateGO ?? new GameObject(this.GetType().Name);
+			if (_stateGO == null)
+			{
+				_stateGO = new GameObject(this.GetType().Name);
+				Debug.LogWarning("ENTER STATE Created _stateGO " + _stateGO.name);
+			}
+			else
+			{
+				Debug.LogWarning("ENTER STATE _stateGO exists " + _stateGO.name);
+			}
 
 			IsActive = true;
 			OnStateEnter();

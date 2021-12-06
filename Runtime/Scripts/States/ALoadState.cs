@@ -15,7 +15,7 @@ namespace maleric.MVP.States
 
 	public abstract class ALoadState : ILoadState
 	{
-		public const int FAIL_SAFE_ACTIVATION_WAIT_MS = 200;
+		public const int FAIL_SAFE_ACTIVATION_WAIT_MS = 500;
 		public const float MIN_SCENE_LOAD_PROGRESS = 0.9f;
 
 		public bool IsActive { get; private set; }
@@ -78,7 +78,6 @@ namespace maleric.MVP.States
 		private async Task PerformSceneLoading(CancellationToken token, string sceneName)
 		{
 			await Task.Yield();
-
 			token.ThrowIfCancellationRequested();
 			if (token.IsCancellationRequested)
 				return;
