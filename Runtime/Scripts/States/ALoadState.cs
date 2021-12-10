@@ -119,7 +119,7 @@ namespace maleric.MVP.States
 
 		protected virtual void OnProgressChanged(float progress)
 		{
-			Debug.LogError(((progress * 100).ToString("F0") + "%"));
+			Debug.Log(((progress * 100).ToString("F0") + "%"));
 		}
 	}
 }
