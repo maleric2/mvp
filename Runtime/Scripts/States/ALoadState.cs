@@ -26,6 +26,8 @@ namespace maleric.MVP.States
 
 		private CancellationTokenSource _cts;
 
+		private AsyncOperation _asyncOperation;
+
 		public void Enter()
 		{
 			IsActive = true;
@@ -36,6 +38,11 @@ namespace maleric.MVP.States
 		{
 			OnStateExit();
 			IsActive = false;
+		}
+
+		public Task PrepareToEnter()
+		{
+			return Task.CompletedTask;
 		}
 
 		protected abstract void OnStateEnter();
@@ -82,23 +89,24 @@ namespace maleric.MVP.States
 			if (token.IsCancellationRequested)
 				return;
 
-			var asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-			asyncOperation.allowSceneActivation = false;
+			_asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+			_asyncOperation.allowSceneActivation = false;
 
 			while (true)
 			{
-				OnProgressChanged(asyncOperation.progress);
+				OnProgressChanged(_asyncOperation.progress);
 
 				token.ThrowIfCancellationRequested();
 				if (token.IsCancellationRequested)
 					return;
 
-				if (asyncOperation.progress >= MIN_SCENE_LOAD_PROGRESS)
+				if (_asyncOperation.progress >= MIN_SCENE_LOAD_PROGRESS)
 					break;
 			}
 
-			asyncOperation.allowSceneActivation = true;
-			// Failsafe wait for evertything to be ready
+			_asyncOperation.allowSceneActivation = true;
+			OnProgressChanged(1f);
+			// Failsafe wait for everything to be ready
 			await Task.Delay(FAIL_SAFE_ACTIVATION_WAIT_MS);
 
 			_cts.Cancel();

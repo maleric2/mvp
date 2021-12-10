@@ -1,5 +1,6 @@
 ﻿using maleric.MVP.Common;
 using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace maleric.MVP.States
@@ -12,6 +13,7 @@ namespace maleric.MVP.States
 	public interface IBaseState
 	{
 		bool IsActive { get; }
+		Task PrepareToEnter();
 		void Enter();
 		void Exit();
 	}
@@ -45,6 +47,20 @@ namespace maleric.MVP.States
 
 		protected GameObject _stateGO;
 
+		public virtual async Task PrepareToEnter()
+		{
+			if (_stateGO == null)
+			{
+				_stateGO = new GameObject(this.GetType().Name);
+				Debug.LogWarning("ENTER STATE Created _stateGO " + _stateGO.name);
+			}
+			else
+			{
+				Debug.LogWarning("ENTER STATE _stateGO exists " + _stateGO.name);
+			}
+			await Task.Delay(100);
+		}
+
 		/// <summary>
 		/// Setting up state only once at initialization
 		/// </summary>
@@ -58,16 +74,6 @@ namespace maleric.MVP.States
 
 		public void Enter()
 		{
-			if (_stateGO == null)
-			{
-				_stateGO = new GameObject(this.GetType().Name);
-				Debug.LogWarning("ENTER STATE Created _stateGO " + _stateGO.name);
-			}
-			else
-			{
-				Debug.LogWarning("ENTER STATE _stateGO exists " + _stateGO.name);
-			}
-
 			IsActive = true;
 			OnStateEnter();
 			OnReadyForServiceChange?.Invoke();

@@ -75,13 +75,12 @@ namespace maleric.MVP.States
 			if (_currentState != state)
 			{
 				Debug.LogWarningFormat("Changing From state '{0}' to state '{1}'", (_currentState != null ? _currentState.ToString() : ""), state.ToString());
+
+				await state.PrepareToEnter();
 				if (_currentState != null) _currentState.Exit();
 
+				state.Enter();
 				_currentState = state;
-
-				await Task.Yield();
-				_currentState.Enter();
-				await Task.Yield();
 				OnStateChange?.Invoke(state);
 			}
 		}
