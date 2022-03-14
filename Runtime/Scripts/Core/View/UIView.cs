@@ -30,6 +30,8 @@ namespace maleric.MVP.Core.View
 
 		public bool IsInteractable => _canvasControlGroup.Raycaster == null || _canvasControlGroup.Raycaster.enabled;
 
+		public UnityEngine.Events.UnityEvent OnSetVisible = new UnityEngine.Events.UnityEvent();
+
 		public void SetInteractable(bool isInteractable)
 		{
 			if (_canvasControlGroup.Raycaster) _canvasControlGroup.Raycaster.enabled = isInteractable;
@@ -40,6 +42,7 @@ namespace maleric.MVP.Core.View
 		{
 			if (_canvasControlGroup.Canvas) _canvasControlGroup.Canvas.enabled = isVisible;
 			if (_canvasControlGroup.Group) _canvasControlGroup.Group.alpha = isVisible ? 1f : 0f;
+			if (isVisible) OnSetVisible?.Invoke();
 		}
 	}
 }
