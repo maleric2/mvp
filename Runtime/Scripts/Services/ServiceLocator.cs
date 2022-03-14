@@ -17,6 +17,18 @@ namespace maleric.MVP.Service
 			_map.Add(typeof(T), service);
 		}
 
+		public void AddOrReplace<T>(T service) where T : class
+		{
+			if (_map.TryGetValue(typeof(T), out var existing))
+			{
+				_map[typeof(T)] = service;
+			}
+			else
+			{
+				_map.Add(typeof(T), service);
+			}
+		}
+
 		public T Provide<T>() where T : class, IService
 		{
 			object inst = null;
