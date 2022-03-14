@@ -10,6 +10,7 @@ namespace maleric.MVP.Service
 	}
 	public class ServiceLocator : IServiceLocator
 	{
+		public Dictionary<Type, object> Map => _map;
 		private readonly Dictionary<Type, object> _map = new Dictionary<Type, object>();
 
 		public void Register<T>(T service) where T : class

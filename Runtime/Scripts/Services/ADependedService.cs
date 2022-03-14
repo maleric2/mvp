@@ -44,6 +44,8 @@ namespace maleric.MVP.Service
 			}
 		}
 
+		public void Reset() { }
+
 		/// <summary>
 		/// Example is where all classes are depended of SaveService, but SaveService might be depended on some of them
 		/// </summary>

@@ -146,6 +146,8 @@ namespace maleric.MVP.Common
 		public bool IsServiceReady() => true;
 
 		public IServiceDepended[] GetDependencies() => null;
+
+		public void Reset() { }
 		#endregion
 	}
 }
